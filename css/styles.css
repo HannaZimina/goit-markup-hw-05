@@ -105,6 +105,10 @@ header {
   letter-spacing: 0.02em;
   text-decoration: none;
   cursor: pointer;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation-links .link:hover,
 .navigation-links .link:focus {
@@ -130,6 +134,12 @@ header {
   letter-spacing: 0.02em;
   text-decoration: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .adress-links .link:hover,
 .adress-links .link:focus {
@@ -318,6 +328,10 @@ header {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .soc-link-icon {
   width: 20px;
@@ -373,6 +387,10 @@ header {
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
+  transition-property: border;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-link:hover,
 .client-link:focus {
