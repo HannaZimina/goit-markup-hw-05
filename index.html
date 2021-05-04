@@ -28,9 +28,11 @@
         <ul class="adress-links list">
             <li class="item">
                 <a class="link" href="mailto:info@devstudio.com"> 
-                <svg class="adress-link-icon" width="16px" height="12px">
-                    <use href="./images/sprite.svg#icon-envelope"></use>
-                </svg>info@devstudio.com
+                
+                    <svg class="adress-link-icon" width="16px" height="12px">
+                        <use href="./images/sprite.svg#icon-envelope"></use>
+                    </svg>info@devstudio.com
+        
                 </a> 
                 </li>
             <li class="item">
@@ -49,7 +51,11 @@
         <section class="promo-section">
             
             <h1 class="promo-text">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="button-main">Заказать услугу</button>
+            <button type="button" class="button-main" data-modal-open>Заказать услугу</button>
+            <div class="backdrop is-hidden"  data-modal>
+                <div class="modal">
+                <button class="" data-modal-close>Закрыть</button></div>
+            </div>
         </section>
         <section class="highlights">
             <div class="container">
@@ -90,9 +96,18 @@
             <div class="container">
             <h2 class="projects">Чем мы занимаемся</h2>
             <ul class="projects-list list">
-                <li class="projects-cards"><img src="./images/projects/img1.jpg" alt="написание кода с использованием планшета" width="370"> </li>
-                <li class="projects-cards"><img src="./images/projects/img2.jpg" alt="верстка для мобильных устройств" width="370"></li>
-                <li class="projects-cards"><img src="./images/projects/img3.jpg" alt="выбор цвета из палитры на планшете" width="370"></li>
+                <li class="projects-cards">
+                  <img src="./images/projects/img1.jpg" alt="написание кода с использованием планшета" width="370">
+                  <p class="project-cards-text">Десктопные приложения</p>
+                </li>
+                <li class="projects-cards">
+                  <img src="./images/projects/img2.jpg" alt="верстка для мобильных устройств" width="370">
+                  <p class="project-cards-text">Мобильные приложения</p>
+                </li>
+                <li class="projects-cards">
+                  <img src="./images/projects/img3.jpg" alt="выбор цвета из палитры на планшете" width="370">
+                  <p class="project-cards-text">Дизайнерские решения</p>
+                </li>
             </ul>
             </div>
         </section>
@@ -355,6 +370,7 @@
 
         </div></div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
