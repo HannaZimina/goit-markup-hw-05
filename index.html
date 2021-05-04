@@ -49,13 +49,8 @@
     <main>
         <!-- promo -->
         <section class="promo-section">
-            
-            <h1 class="promo-text">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="button-main" data-modal-open>Заказать услугу</button>
-            <div class="backdrop is-hidden"  data-modal>
-                <div class="modal">
-                <button class="" data-modal-close>Закрыть</button></div>
-            </div>
+          <h1 class="promo-text">Эффективные решения для вашего бизнеса</h1>
+          <button type="button" class="button-main" data-modal-open>Заказать услугу</button>
         </section>
         <section class="highlights">
             <div class="container">
@@ -370,6 +365,11 @@
 
         </div></div>
     </footer>
+     <div class="backdrop is-hidden" data-modal>
+         <div class="modal">
+             <button class="modal-button" data-modal-close><svg class="modal-svg" width="30px" height="30px" ><use href="./images/sprite.svg#icon-close"></use></svg></button>
+         </div>
+     </div>
     <script src="./js/modal.js"></script>
 </body>
 
